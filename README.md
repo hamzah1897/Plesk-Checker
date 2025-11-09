@@ -1,4 +1,4 @@
-# cPanel Checker
+# PLesk Checker
 
 A multi-threaded tool to check for cPanel accounts. This script allows you to quickly verify cPanel credentials 
 
