@@ -1,10 +1,10 @@
 # PLesk Checker
 
-A multi-threaded tool to check for cPanel accounts. This script allows you to quickly verify cPanel credentials 
+A multi-threaded tool to check for Plesk accounts. This script allows you to quickly verify Plesk credentials 
 
 ## Features
 - Multi-threaded processing for faster execution.
-- Automatic login to cPanel accounts.
+- Automatic login to Plesk accounts.
 - Detailed logs for successful and failed attempts.
 - Pause and resume functionality using `CTRL+C`.
 - Color-coded output for better readability.
@@ -29,13 +29,13 @@ pip install requests colorama
 ### Command-Line Arguments
 | Argument           | Description                                   | Required/Default          |
 |--------------------|-----------------------------------------------|---------------------------|
-| `--file`           | Input file containing cPanel credentials (Format: `url|username|password`). | **Required**              |
+| `--file`           | Input file containing Plesk credentials (Format: `url|username|password`). | **Required**              |
 | `-o`               | Output file to save successful logins.        | Default: `<file>_success.txt` |
 | `--threads`        | Number of threads to use for processing.      | Default: `10`             |
 | `--check-updates`  | Check for script updates and exit.            | Optional                  |
 
 ### Input File Format
-The input file should contain cPanel login details in the following format:
+The input file should contain Plesk login details in the following format:
 ```
 http://example.com:2082|username|password
 https://secure.example.com:2083|admin|password123
@@ -44,10 +44,10 @@ https://secure.example.com:2083|admin|password123
 ### Running the Script
 To start the script, use:
 ```bash
-python cpanel-checker.py --file cpanel.txt -o results.txt --threads 20
+python checker.py --file Plesk.txt -o results.txt --threads 20
 ```
 
-- Replace `cpanel.txt` with your input file containing credentials.
+- Replace `Plesk.txt` with your input file containing credentials.
 - Use the `-o` flag to specify an output file. Default is `<input_file>_success.txt`.
 - Adjust the `--threads` parameter to control concurrency.
 
